@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<!--title-->
+    <title> Sign Up!</title>
+	
+	<!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+	<link href="css/signup.css" rel="stylesheet">
+	<link href="css/tr-animation.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">	
+	<link rel="icon" href="images/favicon.png">
+
+	<!-- Ion Icons --> 
+	<link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">	
+
+	<!-- Polymer Projects -->
+    <link rel="import" href="components/paper-checkbox/paper-checkbox.html">
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body style="overflow-x:hidden; overflow-y:hidden">
+	<header id="navigation">
+		<div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+					<img class="logo-two img-responsive" src="images/logo2.png" alt="">
+                	<br/>
+					<img class="main-logo img-responsive" src="images/header.png" alt="">
+                </a> 
+            </div>  
+            <nav id="main-menu" class="collapse navbar-collapse navbar-right">         
+                <ul class="nav navbar-nav">
+					<li><a class="ion-home" class="menu-top" href="index.html"> &nbsp;&nbsp; Home </a></li>
+                    <li><a class="ion-flash" class="menu-top" href="index.html#welcome-section"> &nbsp;&nbsp; How to use it? </a></li>
+					<li><a class="ion-help-buoy" class="menu-top" href="index.html#promotion"> &nbsp;&nbsp; About Us </a></li>
+                    <li><a class="ion-paper-airplane" class="menu-top" href="fsda">&nbsp;&nbsp; Contact </a></li>
+                </ul>         
+            </nav>
+        </div>
+		<div class="search">
+			<form role="form">
+			<input type="text" class="search-form" autocomplete="off" placeholder="Write something and press enter">
+			<span class="search-close"><i class="fa fa-times"></i></span>
+			</form>
+		</div>
+    </header>
+    
+	<div id="home-section">
+		<div class="container">
+			<div class="home-content text-center">
+				<h1 style="position: relative; top: -200px;">Sign Up!</h1>
+			</div>
+			<center>
+				<div class="userSignUp" style="position: relative; top: 350px;">
+					<input id="name" type="text" class="form-control" name="username" style="width: 400px; border-radius: 7px; position: relative; top: -100px;" placeholder="Name" required/>
+					<input id="username" type="text" class="form-control" name="username" style="width: 400px; border-radius: 7px; position: relative; top: -85px;" placeholder="Email Address" required/>
+				    <input id="password" type="password" class="form-control" style="width: 400px; position: relative; top: -70px; border-radius: 7px;"name="password" placeholder="Password" required/>  
+				    <input id="password2" type="password" class="form-control" style="width: 400px; position: relative; top: -55px; border-radius: 7px;"name="password" placeholder="Re-Type Password" required/>
+			    	<!-- Personal Information --> 
+				    <input id="zipcode" type="text" class="form-control" style="width: 140px; position: relative; top: -40px; border-radius: 7px;"name="zipcode" placeholder="Your Zip Code" required/> 
+				    <div id="checkIfStudent" style="position: relative; left: -100px; color: white; font-size: 20px;"> 
+				    	<paper-checkbox id="isStudent"></paper-checkbox> &nbsp; &nbsp; &nbsp; <strong> Student? </strong>
+				    </div>
+				    <div id="checkIfTeacher" style="position: relative; left: 100px; top: -27px; color: white; font-size: 20px; width: 200px;"> 
+				    	<paper-checkbox id="isTeacher"></paper-checkbox> &nbsp; &nbsp; &nbsp; <strong> Teacher? </strong>
+				    </div>
+				    <button class="btn btn-lg btn-primary btn-block" id="signup" type="submit" style="width: 200px; border-color: white; color: #AE634F; background-color: white;" onclick="signup()"><strong>Sign Up</strong></button> </div>
+		 	</center>
+		</div>
+	</div>
+	
+	<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="js/jquery.parallax.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script> 
+	<script type="text/javascript" src="js/jquery.typer.js"></script>
+	<script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>	
+</body>
+</html>

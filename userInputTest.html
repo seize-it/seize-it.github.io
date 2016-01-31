@@ -1,0 +1,222 @@
+<html>
+<head>
+	<title>SRF - Summer Research Finder</title>
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+		<h1><center> SRF - Summer Research Finder </center></h1>
+		<h2><em>The following credentials are needed:</em></h2>
+		<ul>
+			<h3><em>General Information</em></h3>
+			<li>Your first name</li>
+			<input id="getFirstname"></input>
+			<li>Your last name</li>
+			<input id="getLastname"></input>
+			<li>First Name of High School</li>
+			<input id="getFirstnameofhighschool"></input>
+			<li>Your email</li>
+			<input id="getEmail"></input>
+			<li>Professor's Last Name</li>
+			<input id ="getProfessorslastname"></input>
+			<li>Grade Level (Freshman, Sophomore, Junior, Senior)</li>
+			<input id ="getGradelevel"></input>
+			<li>Current City Residing In</li>
+			<input id ="getCurrentcityresidingin"></input>
+			<li>State Residing In</li>
+			<input id ="getStateresidingin"></input>
+			<li>Zip Code</li>
+			<input id= "getZipcode"></input>
+			<li>Field of Interest</li>
+			<input id ="getFieldofinterest"></input>
+			<h3><em>Experiences</em></h3>
+			<li>List all experience you have in your chosen field:</li>
+			<input id = "getExperience"></input>
+		    <h3><em>Other Information</em></h3> 
+			<li>List any programming languages you are familiar with. (e.g. HTML, JavaScript, CSS, MAT-Lab, Python, Java, C++, R, Ruby on Rails, Pearl, C). Please place commas between different languages(if you have more than one to mention) and an "and" after your very last language you listed (if more than 1). If you have no programming experience, type "no programming languages".</li>
+			<input id = "getProgrammingLanguages"></input>
+			<h3><i>Times</i></h3>
+			<li>Days Available</li>
+			<input id = "getDaysAvailable"></input>
+			<li>Starting Time (include AM or PM)</li>
+			<input id ="getStartingtime"></input>
+			<li>Ending Time (include AM or PM)</li>
+			<input id= "getEndingtime"></input>
+			<li>Month you want to begin you research</li>
+			<input id="getMonthtobegin"></input>
+
+			<h3><i>Transcript and Resume</i></h3>
+			<h5> Please only submit PDF's </h5>
+			<form action="form_action.asp" accept="application/pdf">
+  				Upload your Transcript: <input type="file" name="transcript" id="transcript"><br>
+
+			</form>
+
+			<form action="form_action.asp" accept="application/pdf">
+  				Upload your Resume: <input type="file" name="resume" id="resume"><br>
+
+			</form>
+
+		</ul>
+		
+			<h2> Email Preview: </h2>
+
+		<p id ="demo">
+				Hello Professor Bob,<br>
+				My name is Joe Santos and I am currently a sophomore at Cupertino High School. I live in Indiananpolis, IN and am currently searching for research opportunities in the field of Economics. I was wondering whether you have any available projects for me to help you with or whether I could conduct research under your assistance. Some prior experience I have in Economics include: Playing ping pong. I am available for researching on Monday,Tuesday, and Thursday, between 9 AM and 5 PM. I have programming experience in Java, but I am able to learn anything you may want me to do between now and when we meet in April. If you have any papers or any previously published material you may also want me to read, I am more than happy to read over those. <br><br>
+
+				In addition, I have attached my high school transcript and resume to this email, in case they are of any interest to you.<br><br>
+
+				Sincerely,<br>
+				Joe Santos
+
+		</p>
+		</h4>
+		<br><br><br><button id="submit" onclick="submit()">Submit</button>
+		<script>
+			function submit() {
+
+				var firstname = $("#getFirstname").val();
+				var lastname = $("#getLastname").val();
+				var firstnameofhighschool = $("#getFirstnameofhighschool").val();
+				var email = $("#getEmail").val();
+				var professorlastname = $("#getProfessorslastname").val();
+				var gradelevel = $("#getGradelevel").val();
+				var currentcityresidingin = $("#getCurrentcityresidingin").val();
+				var stateresidingin = $("#getStateresidingin").val();
+				var fieldOfInterest = $("#getFieldofinterest").val();
+				var experience = $("#getExperience").val();
+				var programming = $("#getProgrammingLanguages").val();
+				var startingTime = $("#getStartingtime").val();
+				var endingTime = $("#getEndingtime").val();
+				var monthToBegin = $("#getMonthtobegin").val();
+				var daysAvailable = $("#getDaysAvailable").val();
+
+
+				$(document).ready(function(){
+					var word = firstname;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Joe", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = lastname;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Santos", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = firstnameofhighschool;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Cupertino", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = professorlastname;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Bob", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = gradelevel;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("sophomore", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = currentcityresidingin;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Indiananpolis", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = stateresidingin;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("IN", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = fieldOfInterest;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Economics", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = fieldOfInterest;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Economics", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = experience;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Playing ping pong", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = programming;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Java", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = startingTime;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("9 AM", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = endingTime;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("5 PM", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = monthToBegin;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("April", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = daysAvailable;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Monday,Tuesday, and Thursday", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = firstname;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Joe", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				$(document).ready(function(){
+					var word = lastname;
+					var str = document.getElementById("demo").innerHTML;
+					var res = str.replace("Santos", word);
+					document.getElementById("demo").innerHTML = res;
+
+				});
+				window.location.replace("forwardPage.html");
+		
+			}
+
+			</script>
+	</body>
+</html>

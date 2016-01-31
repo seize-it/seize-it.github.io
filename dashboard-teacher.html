@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<!--title-->
+    <title> Dashboard -- Teacher</title>
+	
+	<!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/tr-animation.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">	
+	<link rel="icon" href="images/favicon.png">
+
+	<!-- Ion Icons --> 
+	<link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">	
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body style="overflow-x:hidden">
+	<header id="navigation">
+		<div class="navbar" role="banner">
+			<div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="dashboard-teacher.html">
+						<img class="logo-two img-responsive" src="images/logo2.png" alt="">
+                    	<br/>
+						<img class="main-logo img-responsive" src="images/header.png" alt="">
+                    </a> 
+                </div>  
+                <nav id="main-menu" class="collapse navbar-collapse navbar-right">         
+                    <ul class="nav navbar-nav">
+						<li><a class="ion-home" class="menu-top" href="dashboard-teacher.html"> &nbsp;&nbsp; Home </a></li>
+                        <li><a class="ion-flash" class="menu-top" href="index.html#welcome-section"> &nbsp;&nbsp; How to use it? </a></li>
+						<li><a class="ion-help-buoy" class="menu-top" href="index.html#promotion"> &nbsp;&nbsp; About Us </a></li>
+                        <li><a class="ion-paper-airplane" class="menu-top" href="fsda">&nbsp;&nbsp; Contact </a></li>
+                    </ul>         
+                </nav>
+            </div>
+			<div class="search">
+				<form role="form">
+				<input type="text" class="search-form" autocomplete="off" placeholder="Write something and press enter">
+				<span class="search-close"><i class="fa fa-times"></i></span>
+				</form>
+			</div>
+        </div>
+    </header>
+    
+	<div id="home-section">
+		<div class="container">
+			<div id="showUsername" onclick="showUsername()"></div>
+			<div class="home-content text-center">
+				<h1 style="position: relative; top: -100px;">Dashboard</h1>
+			</div>
+
+			<div class="settings text-center">
+				<a class="ion-gear-a" onclick="logout()" href="index.html" style="position: relative; top: 180px; left: -305px; color: white; font-size: 24px; border-size: 2px"> &nbsp; Settings </a>
+			</div>	
+
+			<div class="logout text-center">
+				<a class="ion-log-out" onclick="logout()" href="index.html" style="position: relative; top: 145px; left: 300px; color: white; font-size: 24px; border-size: 2px"> &nbsp; Logout </a>
+			</div>	
+
+			<input style="position: relative; top: 400px; left: 100px"type="file" name="uploadField" />
+		</div>
+	</div>
+
+    <div id="welcome-section" class="padding">
+		<div class="container">
+			<div class="text-center section-title">
+				<h1 style="color: #AE634F; font: Raleway; font-size: 26px; font-weight: bold; position: relative; top: -40px">What is Summer Research Finder &nbsp;&nbsp;<div style ="position: relative; top: -28.5px; left: 260px;" class="ion-help-circled"/></h1> 
+			</div>
+			<div class="welcome-content">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="welcome-info">
+							<center>
+								<p><strong> Summer Research Finder is easy to use, yet hard to explain! </strong><br/>
+
+							</p>
+						</center>
+							
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	
+	<footer id="footer">			
+		<div id="footer-bottom">
+			<div class="container text-center">
+				<p>Created by <strong> Abhay Varshney </strong> and <strong> Omkar Sakhawalkar</strong>. All Rights Reserved.</p>
+			</div>			
+		</div>
+	</footer>
+
+	<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="js/jquery.parallax.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script> 
+	<script type="text/javascript" src="js/jquery.typer.js"></script>
+	<script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>	
+</body>
+</html>
