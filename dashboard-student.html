@@ -27,7 +27,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,900' rel='stylesheet' type='text/css'>
 </head>
-<body style="overflow-x:hidden" onload="feasible()">
+<body style="overflow-x:hidden" onload="feasible(); addUsername()">
 	<header id="navigation">
 		<div class="navbar" role="banner">
 			<div class="container">
@@ -65,7 +65,7 @@
 				<a class="ion-log-out" onclick="logout()" href="index.html" style="position: relative; top: 145px; left: 300px; color: white; font-size: 24px; border-size: 2px"> &nbsp; Logout </a>
 			</div>	
 
-			<div style="color: white; font-style: Roboto; font-size: 25px; position: relative; top: 220px; font-weight: bold" id="usernameText" class="usernameText text-center"> Welcome!
+			<div id="welcome" style="color: white; font-style: Roboto; font-size: 25px; position: relative; top: 220px; font-weight: bold" id="usernameText" class="usernameText text-center"> Welcome,
 			</div>
 
 			<div id="application" onclick="check()" class="text-center" style="color: white; font-style: Roboto; font-size: 20px; position: relative; top: 275px;"> 
@@ -86,12 +86,12 @@
 			<div class="text-center section-title">
 				<h1 style="color: #AE634F; font: Raleway; font-size: 26px; font-weight: bold; position: relative; top: -40px">List of Professors in your area</h1> 
 			</div>
-			<div class="welcome-content">
+			<div class="welcome-content" style="position: relative; left: 90px; width: 2000px;">
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="welcome-info">
 							<div class="list-group">
-							  <button type="button" class="list-group-item"></button>
+							  <button type="button" class="list-group-item">Professor 1:</button>
 							  <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
 							  <button type="button" class="list-group-item">Morbi leo risus</button>
 							  <button type="button" class="list-group-item">Porta ac consectetur ac</button>

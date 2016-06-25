@@ -359,6 +359,15 @@ function check() {
 	} else {
 		document.getElementById ("completed").style.display = "none";
 	}
-
 }
 
+function addUsername() {
+	var ref = new Firebase("https://summerprogramlocator.firebaseio.com/");
+	var auth = ref.getAuth();
+	console.log(auth);
+
+    var div = document.getElementById('welcome');
+	div.innerHTML = div.innerHTML + auth.val;
+
+	
+}
